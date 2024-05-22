@@ -1,0 +1,52 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+//1.Calculating age
+    int yearofbirth;
+    int currentyear=2024;
+    int age;
+    printf("Enter your year of birth:");
+    scanf("%d", &yearofbirth);
+    age= currentyear-yearofbirth;
+    printf("You are %d years old \n",age);
+//2.Finding the sum and product
+    int A;
+    int B;
+    int Sum;
+    int Product;
+    printf("Enter number A: ");
+    scanf("%d", &A);
+    printf("Enter number B: ");
+    scanf("%d", &B);
+    Sum= A+B;
+    Product= A*B;
+    printf("Sum of these numbers is %d",Sum); 
+    printf(" and the product is %d \n",Product );
+//3.Finding square of the number
+    int Value;
+    int Square;
+    printf("Enter a Value>> ");
+    scanf("%d",&Value);
+    printf("Number is %d \n", Value);
+    Square= Value*Value;
+    printf("Its square is %d",Square);
+//4.Reads two numbers then prints the sum and product
+    int numberA;
+    int numberB;
+    int Sum;
+    int Product;
+    printf("Enter number A>>");
+    scanf("%d",&numberA);
+    printf("Enter number B>>");
+    scanf("%d",&numberB);
+    Sum=numberA+numberB;
+    printf("Sum of %d",numberA);
+    printf(" and %d",numberB);
+    printf(" is %d", Sum);
+    Product=numberA*numberB;
+    printf("The product of %d",numberA);
+    printf(" and %d",numberB);
+    printf(" is %d",Product);
+    return 0;
+}
