@@ -1,1 +1,1 @@
-
+Assignment 1 is a program that checks if a number is either a multiple of 3,5 or 7 and also converts from celcius to Fahrenheit.
