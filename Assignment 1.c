@@ -26,12 +26,33 @@ int main() {
     else{
         printf("Not a multiple of 7\n",num3);
     }
- //Converting from degrees celcius to degrees Fahrenheit
-    float Celciusvalue;
-    float Fahrenheitvalue;
-    printf("Enter Celcius value:");
-    scanf("%f",&Celciusvalue);
-    Fahrenheitvalue=(1.8*Celciusvalue)+32;
-    printf("The temperature in Fahrenheit is %f",Fahrenheitvalue);
+ //Converting from either degrees celcius to degrees Fahrenheit or vice versa
+     int choice;
+     float Celsiusvalue,Fahrenheitvalue,Kelvin;
+     printf("1.Celsius to Fahrenheit\n");
+      printf("2.Fahrenheit to Celsius\n");
+      printf("Enter your choice 1 or 2:");
+      scanf("%d",&choice);
+ //Converting from Celsius to Fahrenheit and Kelvin
+      if(choice==1){
+    printf("Enter temperature in Celsisus: ");
+    scanf("%f",&Celsiusvalue);
+    Fahrenheitvalue=(Celsiusvalue*9/5)+32;
+    printf("Fahrenheit value=%.2f\n",Fahrenheitvalue);
+     Kelvin=Fahrenheitvalue-273.15;
+    printf("Fahrenheit value in Kelvin= %.2f\n",Kelvin);
+    }
+ //Conerting from Fahrenheit to Celsius and kelvin
+     else if(choice==2){
+    printf("Enter temperature in Fahrenheit: ");
+    scanf("%f",&Fahrenheitvalue);
+    Celsiusvalue=(Fahrenheitvalue-32)*5/9;
+    printf("Celsisus value=%.2f\n",Celsiusvalue);
+    Kelvin=Celsiusvalue+273.15;
+    printf("Celsius value in Kelvin=%.2f\n",Kelvin);
+    }
+else{
+    printf("Invalid choice.Please try again\n");
+}
        return 0;
 }
